@@ -1,6 +1,6 @@
 {
   "name": "@tiger-ui/react",
-  "version": "1.0.0-beta.1",
+  "version": "0.0.1-beta.1",
   "description": "The Tiger UI React enables you to create React components easily and more legibly using the Emotion library. You can define style values for your components effortlessly and add customizable component properties along the way.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
