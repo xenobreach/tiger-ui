@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/xenobreach/tiger-ui/assets/92295550/f2d48b2e-6858-41a0-9bb1-0048f52776db" alt="Tiger UI logo" height="150" width="150">
+  <img src="https://github.com/xenobreach/tiger-ui/assets/92295550/dec971fb-64c5-4c5f-ba27-b940556b65fb" alt="Tiger UI logo" height="150" width="150">
   <h1 align="center" style="color: #26dba9">Utils</h1>
 </p>
 
