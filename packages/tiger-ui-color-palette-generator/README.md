@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/xenobreach/tiger-ui/assets/92295550/f2d48b2e-6858-41a0-9bb1-0048f52776db" alt="Tiger UI logo" height="150" width="150">
+  <img src="https://github.com/xenobreach/tiger-ui/assets/92295550/dec971fb-64c5-4c5f-ba27-b940556b65fb" alt="Tiger UI logo" height="150" width="150">
   <h1 align="center" style="color: #26dba9">Color Palette Generator</h1>
 </p>
 
@@ -21,7 +21,10 @@ Let's make an example on a [React](https://react.dev/) project:
 ```tsx
 import { Color } from '@tiger-ui/color-palette-generator';
 
-function MyComponent() {
+import Box from '../../components/Box';
+import Paragraph from '../../components/Paragraph';
+
+export default function MyComponent() {
    const myColors = new Color('#1746d1');
 
     console.log('main color: ', myColors.main);
@@ -30,38 +33,36 @@ function MyComponent() {
     console.log('contrast color: ', myColors.contrast);
 
     return (
-      <Box my={10}>
-        <Box display="flex" key={myColors.main}>
-          <Box
-            width="200px"
-            height="200px"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            bgColor={myColors.dark}
-          >
-            <Paragraph color={myColors.contrast}>Darker</Paragraph>
-          </Box>
-          <Box
-            width="200px"
-            height="200px"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            bgColor={myColors.main}
-          >
-            <Paragraph color={myColors.contrast}>Main</Paragraph>
-          </Box>
-          <Box
-            width="200px"
-            height="200px"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            bgColor={myColors.light}
-          >
-            <Paragraph color={myColors.contrast}>Light</Paragraph>
-          </Box>
+      <Box display="flex" width="100%" justifyContent="center" my={10}>
+        <Box
+          width="200px"
+          height="200px"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          bgColor={myColors.dark}
+        >
+          <Paragraph color={myColors.contrast}>Darker</Paragraph>
+        </Box>
+        <Box
+          width="200px"
+          height="200px"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          bgColor={myColors.main}
+        >
+          <Paragraph color={myColors.contrast}>Main</Paragraph>
+        </Box>
+        <Box
+          width="200px"
+          height="200px"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          bgColor={myColors.light}
+        >
+          <Paragraph color={myColors.contrast}>Light</Paragraph>
         </Box>
       </Box>
     );
@@ -69,7 +70,7 @@ function MyComponent() {
 ```
 output:
 
-![0bfd8ede-946b-49b9-921c-e6137f6dccb8](https://github.com/xenobreach/tiger-ui/assets/92295550/107fdc44-0cd0-4f1d-9673-d8fafb526095)
+![image](https://github.com/xenobreach/tiger-ui/assets/92295550/450ea184-d5bb-4218-b134-e751b14d6c41)
 
 ```
 main color:  #1746d1
@@ -82,7 +83,10 @@ You can change the intensity of the dark and light colors. You can also customiz
 ```tsx
 import { Color } from '@tiger-ui/color-palette-generator';
 
-function MyComponent() {
+import Box from '../../components/Box';
+import Paragraph from '../../components/Paragraph';
+
+export default function MyComponent() {
     const myColors = new Color(
       '#1746d1',
       {
@@ -99,7 +103,7 @@ function MyComponent() {
     console.log('contrast color: ', myColors.contrast);
 
     return (
-      <Box my={10}>
+      <Box display="flex" width="100%" justifyContent="center" my={10}>
         <Box display="flex" key={myColors.main}>
           <Box
             width="200px"
@@ -138,7 +142,7 @@ function MyComponent() {
 ```
 output:
 
-![c0508a22-6438-4418-834e-9121ed9594ad](https://github.com/xenobreach/tiger-ui/assets/92295550/5bcc7971-b8c8-4ece-9dfe-9d287259be5b)
+![image2](https://github.com/xenobreach/tiger-ui/assets/92295550/f313259f-7a9d-418a-b5da-43e9b3ca3751)
 
 
 ```
@@ -152,7 +156,10 @@ contrast color:  #c4d3ff
 ```tsx
 import { Color } from '@tiger-ui/color-palette-generator';
 
-function MyComponent() {
+import Box from '../../components/Box';
+import Paragraph from '../../components/Paragraph';
+
+export default function MyComponent() {
     const myColors = [
       new Color('#1746d1'), // blue
       new Color('#d11717'), // red
@@ -161,41 +168,43 @@ function MyComponent() {
     ]
 
     return (
-      <Box my={10}>
-        {myColors.map((color) => (
-          <Box display="flex" key={color.main}>
-            <Box
-              width="200px"
-              height="200px"
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              bgColor={color.dark}
-            >
-              <Paragraph color={color.contrast}>Darker</Paragraph>
+      <Box display="flex" justifyContent="center">
+        <Box my={10}>
+          {myColors.map((color) => (
+            <Box display="flex" key={color.main}>
+              <Box
+                width="200px"
+                height="200px"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                bgColor={color.dark}
+              >
+                <Paragraph color={color.contrast}>Darker</Paragraph>
+              </Box>
+              <Box
+                width="200px"
+                height="200px"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                bgColor={color.main}
+              >
+                <Paragraph color={color.contrast}>Main</Paragraph>
+              </Box>
+              <Box
+                width="200px"
+                height="200px"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                bgColor={color.light}
+              >
+                <Paragraph color={color.contrast}>Light</Paragraph>
+              </Box>
             </Box>
-            <Box
-              width="200px"
-              height="200px"
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              bgColor={color.main}
-            >
-              <Paragraph color={color.contrast}>Main</Paragraph>
-            </Box>
-            <Box
-              width="200px"
-              height="200px"
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              bgColor={color.light}
-            >
-              <Paragraph color={color.contrast}>Light</Paragraph>
-            </Box>
-          </Box>
-        ))}
+          ))}
+        </Box>
       </Box>
     );
 }
@@ -203,4 +212,4 @@ function MyComponent() {
 
 output:
 
-![c0508a22-6438-4418-834e-9121ed9594ad](https://github.com/xenobreach/tiger-ui/assets/92295550/70781422-c967-437d-a1af-27702b82794e)
+![image3](https://github.com/xenobreach/tiger-ui/assets/92295550/5aed9345-e097-4b26-ba52-27e7be1af5fa)
