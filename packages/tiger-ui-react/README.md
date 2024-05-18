@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/xenobreach/tiger-ui/assets/92295550/f2d48b2e-6858-41a0-9bb1-0048f52776db" alt="Tiger UI logo" height="150" width="150">
+  <img src="https://github.com/xenobreach/tiger-ui/assets/92295550/dec971fb-64c5-4c5f-ba27-b940556b65fb" alt="Tiger UI logo" height="150" width="150">
   <h1 align="center" style="color: #26dba9">Tiger UI React</h1>
 </p>
 
@@ -79,7 +79,7 @@ export default function Page() {
 
 Output:
 
-![image](https://github.com/xenobreach/tiger-ui/assets/92295550/8f125269-1017-4026-9ac8-618bfcf83ac8)
+![image](https://github.com/xenobreach/tiger-ui/assets/92295550/eebe8091-71cb-41a6-ab81-e0c48cd72680)
 
 ## Element Props
 You can add props that change the style state of the elements you create. You can use this feature in two different ways:
@@ -135,8 +135,9 @@ You can add props that change the style state of the elements you create. You ca
   ```
   
   Output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/81d83a3c-4f71-49f5-aeae-4df754c5679f)
+
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/9bc4182c-a3d2-48b8-b085-6635030c7cf1)
+
 </details>
 
 <details><summary><b>Way 2</b></summary>
@@ -257,8 +258,7 @@ It is also possible to assign values responsively while using the props you adde
 
   output:
 
-  ![brave_9QCFOoBspy](https://github.com/xenobreach/tiger-ui/assets/92295550/f6cdc9ba-31ed-4070-9286-6d3739559737)
-
+  ![brave_RIdYREuPVq](https://github.com/xenobreach/tiger-ui/assets/92295550/dd6f7af2-ee00-45d6-9496-899c358a5504)
 </details>
 
 Note that the responsive values here are determined by the breakpoints in your theme. Breakpoints in the theme system use media queries in css. If you want to customize these media queries, you can update the breakpoints values in your theme according to yourself.
@@ -303,7 +303,7 @@ You can reuse a previously created element by wrapping it with `createElement` a
   export default function Page() {
     return (
       <Container>
-        <Button>Default</Button>
+        <Button cssx={{ marginRight: '1rem' }}>Default</Button>
         <OutlinedButton>Outlined</OutlinedButton>
       </Container>
     )
@@ -311,8 +311,9 @@ You can reuse a previously created element by wrapping it with `createElement` a
   ```
   
   output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/0c9d66df-72ef-4dd5-b6fd-b244a9aa0858)
+
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/e30b3ffa-1d74-45ee-9f36-168c04b3548c)
+
 </details>
 
 In some cases you may want to change the html tag of an element with the same properties. In this case you can use the as property.
@@ -351,8 +352,9 @@ In some cases you may want to change the html tag of an element with the same pr
   ```
   
   output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/93bba487-dcfd-445a-9cd6-a8a90d181e0c)
+
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/f7aef6f5-a96b-4c0b-baa8-80c4188a0579)
+
 </details>
 
 ## Defaults Attributes / Props
@@ -452,8 +454,9 @@ You can also use this feature for style props that you define yourself:
   ```
   
   output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/f1a8cf94-ee59-4d6d-bb09-12bcd1b4872d)
+
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/491f4ce2-a11a-4c47-89ca-fab25a95938a)
+
 </details>
 
 ## Children Content
@@ -504,12 +507,13 @@ You can add a children content inside the elements you created. This children co
   ```
   
   output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/10008a83-99e8-4737-a4c6-a7e1fdae44dd)
+
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/2f15b531-6c63-4757-81d0-1cbee0f4f63d)
   
   html output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/fc8a5927-0dad-4def-8090-60e83c1f6d3e)
+
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/79be9843-a9a4-46a9-981d-979d881676ac)
+
 </details>
 
 ## Theming
@@ -656,8 +660,8 @@ Now you are ready to use your theme. Let's make an example:
   ```
   
   output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/8bff6aae-ec3f-43bb-a4bb-2200772f5ef3)
+
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/aeadcb07-ddfd-4eec-a390-299d157312e7)
 </details>
 
 ### Default Theme Options
@@ -682,7 +686,7 @@ You can review the default theme here:
     },
     breakpoints: {
       keys: [
-          "xs",
+        "xs",
         "sm",
         "md",
         "lg",
@@ -903,7 +907,7 @@ You can follow a path like below to use the colors in the theme you created:
 
   output:
 
-  ![brave_6TkUsZJojL](https://github.com/xenobreach/tiger-ui/assets/92295550/b1679e1a-cff9-45a2-bf26-400b1e72cbc3)
+  ![brave_HxdgdbOzmy](https://github.com/xenobreach/tiger-ui/assets/92295550/e3f40159-dcb6-4a2a-88be-1b6a442faee1)
 
 </details>
 
@@ -928,16 +932,12 @@ Also, when defining your colors, if you want other color types to be created by 
   ```
 
   console output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/1d9be135-ddf0-4286-94bd-f37b62bdafa1)
+
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/06436e87-0683-4563-b333-b34ad3045ded)
 
 </details>
 
 We have also provided some options that allow you to customize the dark, light and contrast values of the colors. For example, you can adjust the darkness of your dark color. Or if your contrast color is close to white, you can also customize this white color.
-
-You can use the links below to learn more about `@tiger-ui/color-palette-generator` and `@tiger-ui/contrast-color`:
-- [@tiger-ui/color-palette-generator](https://github.com/xenobreach/tiger-ui/tree/master/packages/tiger-ui-color-palette-generator)
-- [@tiger-ui/contrast-color](https://github.com/xenobreach/tiger-ui/tree/master/packages/tiger-ui-contrast-color)
 
 <details><summary><b>Example Code</b></summary>
   
@@ -964,10 +964,14 @@ You can use the links below to learn more about `@tiger-ui/color-palette-generat
   ```
 
   output:
-  
-  ![brave_LG6ekduKYC](https://github.com/xenobreach/tiger-ui/assets/92295550/9330db79-55da-45c9-8799-717e502984ae)
+
+  ![brave_PIUlO7vaKz](https://github.com/xenobreach/tiger-ui/assets/92295550/63479ccc-bcce-4fcd-88b5-a765af90e560)
 
 </details>
+
+You can use the links below to learn more about `@tiger-ui/color-palette-generator` and `@tiger-ui/contrast-color`:
+- [@tiger-ui/color-palette-generator](https://github.com/xenobreach/tiger-ui/tree/master/packages/tiger-ui-color-palette-generator)
+- [@tiger-ui/contrast-color](https://github.com/xenobreach/tiger-ui/tree/master/packages/tiger-ui-contrast-color)
 
 ### Typescript - Theme Type Declaration
 
@@ -1191,8 +1195,7 @@ declare module '@tiger-ui/react' {
  
 Now, when creating a theme, we can add our own color accordingly to the type control.
 
-![image](https://github.com/xenobreach/tiger-ui/assets/92295550/15fe1a6c-2384-425c-bddf-0dad8d357aae)
-
+![image](https://github.com/xenobreach/tiger-ui/assets/92295550/81ce2406-1237-49be-98bd-7ac6cab9fb87)
 
 <details><summary><b>Code</b></summary>
 
@@ -1222,7 +1225,7 @@ Now, when creating a theme, we can add our own color accordingly to the type con
         theme={theme}
         globalStyle={{
           'body': {
-            backgroundColor: theme.colors.background.default,
+            backgroundColor: theme.tokens.colors.background.default,
             fontFamily: '"Poppins", sans-serif',
             margin: 0,
           },
@@ -1297,8 +1300,8 @@ This style object also supports css properties like `:hover`, `:focus`, `:disabl
   }
   ```
   output:
-  
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/cc024b73-e0be-4c27-bc3d-ceaa0cd4190d)
+
+  ![brave_NV8rddjWZI](https://github.com/xenobreach/tiger-ui/assets/92295550/4251f9f2-8c83-4b18-897f-9f2c54ad9126)
 </details>
 
 You can also access the current theme values with a parameter by giving a callback value.
@@ -1336,5 +1339,6 @@ You can also access the current theme values with a parameter by giving a callba
 
   output:
 
-  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/a2071210-6481-463d-8b38-a152d73e36f5)
+  ![image](https://github.com/xenobreach/tiger-ui/assets/92295550/b0437ac7-3de8-4bb4-bba1-73970d2f6752)
+
 </details>
